@@ -5,12 +5,26 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Madasir's Projects</title>
+    <link rel="stylesheet" type="text/css" href="MasterStyleSheet.css">
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
-
+    <div id="header">
+    <h1>Madasir's Project</h1>
+      <nav><ul>
+			<li><a href="#">Homemade Pojects</a></li>
+			<li><a href="#">Skills</a></li>
+			<li><a href="#">About</a></li>
+	</ul></nav>
     </div>
+   
+
+
+        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+             This is a test
+        </asp:ContentPlaceHolder>
+
+
     </form>
 </body>
 </html>

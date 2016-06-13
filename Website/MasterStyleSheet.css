@@ -1,0 +1,47 @@
+﻿h1 {
+    color: white;
+    font-size: 50px;
+    text-align:center;
+    background-color:blue;
+    border-style:solid;
+    border-color:aqua;
+}
+
+body {
+    background-color:darkgrey;
+    margin:1px;
+    padding:10px;
+}
+
+nav{
+    height:40px;
+    background-color: aqua;
+}
+
+nav ul{
+     margin: 0;
+    padding: 0;
+    text-align: center
+}
+
+nav ul li{
+    display: inline;
+    list-style:none;
+    float: left;
+}
+
+nav ul li a:visited{
+    display:inline-block;
+     width:180px;
+     font-weight:bold;
+     color:black;
+     text-align:center;
+    text-decoration:none;
+    margin-right: -4px;
+    padding:4px;
+    text-transform:uppercase;
+}
+
+nav ul li a:hover{
+    color:white;
+}
