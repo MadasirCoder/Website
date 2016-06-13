@@ -5,43 +5,33 @@
     background-color:blue;
     border-style:solid;
     border-color:aqua;
+    border-radius: 15px;
+    margin:20px;
 }
 
 body {
     background-color:darkgrey;
-    margin:1px;
-    padding:10px;
+    margin:5px;
+    padding:1px;
+    border-color:black;
 }
 
-nav{
-    height:40px;
-    background-color: aqua;
+nav {
+text-align:center;
+height:25px;
+background-color:aqua;
+border-radius: 12px;
+}
+nav li {
+display:inline;
+padding:0px 30px; 
+}
+nav a {
+text-decoration:none; 
+font-size: 20px;
 }
 
-nav ul{
-     margin: 0;
-    padding: 0;
-    text-align: center
-}
-
-nav ul li{
-    display: inline;
-    list-style:none;
-    float: left;
-}
-
-nav ul li a:visited{
-    display:inline-block;
-     width:180px;
-     font-weight:bold;
-     color:black;
-     text-align:center;
-    text-decoration:none;
-    margin-right: -4px;
-    padding:4px;
-    text-transform:uppercase;
-}
-
-nav ul li a:hover{
+nav a:hover{
     color:white;
 }
+   

@@ -9,20 +9,24 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="header">
     <h1>Madasir's Project</h1>
       <nav><ul>
-			<li><a href="#">Homemade Pojects</a></li>
-			<li><a href="#">Skills</a></li>
-			<li><a href="#">About</a></li>
+			<li><a href="#">HOMEMADE PROJECTS</a></li>
+			<li><a href="#">SKILLS</a></li>
+			<li><a href="#">ABOUT</a></li>
 	</ul></nav>
-    </div>
    
 
 
         <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
              This is a test
         </asp:ContentPlaceHolder>
+        <div id ="footer">
+            <script type="text/javascript">
+                var d = new Date()
+                document.write(d.getFullYear())
+             </script>
+        </div>
 
 
     </form>
