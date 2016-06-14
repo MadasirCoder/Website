@@ -21,11 +21,10 @@
         <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
              This is a test
         </asp:ContentPlaceHolder>
+
+        
         <div id ="footer">
-            <script type="text/javascript">
-                var d = new Date()
-                document.write(d.getFullYear())
-             </script>
+            <p>Copyright © 2016, My Personal website | by Madasir Ahmed</p>
         </div>
 
 
