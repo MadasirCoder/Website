@@ -211,6 +211,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="HomeWebForm.aspx" />
+    <Content Include="SkillsStyleSheet.css" />
     <Content Include="SkillsWebForm.aspx" />
     <Content Include="ProjectsWebForm.aspx" />
     <Content Include="AboutWebForm.aspx" />

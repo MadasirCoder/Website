@@ -5,6 +5,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Madasir's Projects</title>
+     <asp:ContentPlaceHolder ID="head" runat="server">
+
+        </asp:ContentPlaceHolder>
     <link rel="stylesheet" type="text/css" href="MasterStyleSheet.css">
 </head>
 <body>
@@ -19,11 +22,11 @@
 	</ul></nav>
    
 
-
+        <div id="content">
         <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
              This is a test
         </asp:ContentPlaceHolder>
-
+        </div>
         
         <div id ="footer">
             <p>Copyright © 2016, My Personal website | by Madasir Ahmed</p>
