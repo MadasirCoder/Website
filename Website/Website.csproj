@@ -210,7 +210,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="WebForm1.aspx" />
+    <Content Include="HomeWebForm.aspx" />
+    <Content Include="SkillsWebForm.aspx" />
+    <Content Include="ProjectsWebForm.aspx" />
+    <Content Include="AboutWebForm.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MasterStyleSheet.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
@@ -420,12 +423,33 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="WebForm1.aspx.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="HomeWebForm.aspx.cs">
+      <DependentUpon>HomeWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm1.aspx.designer.cs">
-      <DependentUpon>WebForm1.aspx</DependentUpon>
+    <Compile Include="HomeWebForm.aspx.designer.cs">
+      <DependentUpon>HomeWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SkillsWebForm.aspx.cs">
+      <DependentUpon>SkillsWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SkillsWebForm.aspx.designer.cs">
+      <DependentUpon>SkillsWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectsWebForm.aspx.cs">
+      <DependentUpon>ProjectsWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectsWebForm.aspx.designer.cs">
+      <DependentUpon>ProjectsWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AboutWebForm.aspx.cs">
+      <DependentUpon>AboutWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutWebForm.aspx.designer.cs">
+      <DependentUpon>AboutWebForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

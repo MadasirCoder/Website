@@ -1,5 +1,5 @@
-﻿h1 {
-    color: white;
+﻿#header {
+    color: yellow;
     font-size: 50px;
     text-align:center;
     background-color:blue;
@@ -7,6 +7,12 @@
     border-color:aqua;
     border-radius: 15px;
     margin:20px;
+    
+}
+
+a {
+    color:white;
+     text-decoration:none; 
 }
 
 body {
@@ -35,6 +41,7 @@ nav a:hover{
     color:white;
 }
    
+
 #footer{
     padding-top:400px;
     text-align:center;

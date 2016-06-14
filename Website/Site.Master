@@ -9,11 +9,13 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <h1>Madasir's Project</h1>
+    <div id ="header">
+        <a href="HomeWebForm">Madasir's Project</a>
+    </div>
       <nav><ul>
-			<li><a href="#">HOMEMADE PROJECTS</a></li>
-			<li><a href="#">SKILLS</a></li>
-			<li><a href="#">ABOUT</a></li>
+			<li><a href="ProjectsWebForm">HOMEMADE PROJECTS</a></li>
+			<li><a href="SkillsWebForm">SKILLS</a></li>
+			<li><a href="AboutWebForm">ABOUT</a></li>
 	</ul></nav>
    
 
