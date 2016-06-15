@@ -212,6 +212,7 @@
     </Content>
     <Content Include="HomeStyleSheet.css" />
     <Content Include="HomeWebForm.aspx" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Images\monopoly.PNG" />
     <Content Include="Images\monopoly1.PNG" />
     <Content Include="Images\monopoly10.PNG" />
