@@ -182,7 +182,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="About.aspx" />
     <Content Include="AboutStyleSheet.css" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
@@ -211,11 +210,34 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="HomeStyleSheet.css" />
     <Content Include="HomeWebForm.aspx" />
+    <Content Include="Images\monopoly.PNG" />
+    <Content Include="Images\monopoly1.PNG" />
+    <Content Include="Images\monopoly10.PNG" />
+    <Content Include="Images\monopoly11.PNG" />
+    <Content Include="Images\monopoly12.PNG" />
+    <Content Include="Images\monopoly13.PNG" />
+    <Content Include="Images\monopoly14.PNG" />
+    <Content Include="Images\monopoly15.PNG" />
+    <Content Include="Images\monopoly16.PNG" />
+    <Content Include="Images\monopoly17.PNG" />
+    <Content Include="Images\monopoly2.PNG" />
+    <Content Include="Images\monopoly3.PNG" />
+    <Content Include="Images\monopoly4.PNG" />
+    <Content Include="Images\monopoly5.PNG" />
+    <Content Include="Images\monopoly6.PNG" />
+    <Content Include="Images\monopoly7.PNG" />
+    <Content Include="Images\monopoly8.PNG" />
+    <Content Include="Images\monopoly9.PNG" />
+    <Content Include="MonopolyStyleSheet.css" />
+    <Content Include="ProjectsStyleSheet.css" />
     <Content Include="SkillsStyleSheet.css" />
     <Content Include="SkillsWebForm.aspx" />
     <Content Include="ProjectsWebForm.aspx" />
     <Content Include="AboutWebForm.aspx" />
+    <Content Include="Monopoly.aspx" />
+    <Content Include="ImageWebForm.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="MasterStyleSheet.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
@@ -374,13 +396,6 @@
       <DependentUpon>VerifyPhoneNumber.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="About.aspx.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="About.aspx.designer.cs">
-      <DependentUpon>About.aspx</DependentUpon>
-    </Compile>
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
@@ -452,6 +467,20 @@
     </Compile>
     <Compile Include="AboutWebForm.aspx.designer.cs">
       <DependentUpon>AboutWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Monopoly.aspx.cs">
+      <DependentUpon>Monopoly.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Monopoly.aspx.designer.cs">
+      <DependentUpon>Monopoly.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageWebForm.aspx.cs">
+      <DependentUpon>ImageWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageWebForm.aspx.designer.cs">
+      <DependentUpon>ImageWebForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
