@@ -1,3 +1,25 @@
 ﻿body {
     font-size:22px;
 }
+
+#large,#large2,#large3,#large4{
+    font-size:30px;
+    color:red;
+    text-decoration:underline;
+    
+}
+
+#introduction{
+    border:solid;
+    margin-bottom:30px;
+    margin-top:2px;
+    padding:10px;
+}
+
+#panel{
+    margin-bottom:49px;
+}
+
+#Skills{
+    margin-bottom:30px;
+}

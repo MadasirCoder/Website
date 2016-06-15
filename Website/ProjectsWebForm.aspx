@@ -12,9 +12,9 @@
         <div id="Monopoly">
         <h2>Monopoly Transaction Tool</h2>
         <p>
-            <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/monopoly.PNG" href="Monopoly.aspx">HyperLink</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Images/monopoly.PNG" href="Monopoly.aspx"></asp:HyperLink>
             </p>
-            <p>Technology Used: Java Object Oriented, GUI(Swing), MVC, Oberver Pattern</p>
+            <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern</p>
          </div>
     </div>
 </asp:Content>
