@@ -182,7 +182,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AboutStyleSheet.css" />
+    <Content Include="StyleSheets\AboutStyleSheet.css" />
     <Content Include="Account\AddPhoneNumber.aspx" />
     <Content Include="Account\Confirm.aspx" />
     <Content Include="Account\Forgot.aspx" />
@@ -198,10 +198,10 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
-    <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="Flag.jar" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
@@ -210,9 +210,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="HomeStyleSheet.css" />
-    <Content Include="HomeWebForm.aspx" />
+    <Content Include="StyleSheets\HomeStyleSheet.css" />
+    <Content Include="WebPages\HomeWebForm.aspx" />
     <Content Include="Images\background.jpg" />
+    <Content Include="Images\Graphics.png" />
     <Content Include="Images\monopoly.PNG" />
     <Content Include="Images\monopoly1.PNG" />
     <Content Include="Images\monopoly10.PNG" />
@@ -231,16 +232,19 @@
     <Content Include="Images\monopoly7.PNG" />
     <Content Include="Images\monopoly8.PNG" />
     <Content Include="Images\monopoly9.PNG" />
-    <Content Include="MonopolyStyleSheet.css" />
-    <Content Include="ProjectsStyleSheet.css" />
-    <Content Include="SkillsStyleSheet.css" />
-    <Content Include="SkillsWebForm.aspx" />
-    <Content Include="ProjectsWebForm.aspx" />
-    <Content Include="AboutWebForm.aspx" />
-    <Content Include="Monopoly.aspx" />
-    <Content Include="ImageWebForm.aspx" />
+    <Content Include="Images\website.png" />
+    <Content Include="Monopoly.jar" />
+    <Content Include="StyleSheets\MonopolyStyleSheet.css" />
+    <Content Include="StyleSheets\ProjectsStyleSheet.css" />
+    <Content Include="StyleSheets\SkillsStyleSheet.css" />
+    <Content Include="WebPages\SkillsWebForm.aspx" />
+    <Content Include="WebPages\ProjectsWebForm.aspx" />
+    <Content Include="WebPages\AboutWebForm.aspx" />
+    <Content Include="WebPages\Monopoly.aspx" />
+    <Content Include="WebPages\ImageWebForm.aspx" />
+    <Content Include="WebPages\GraphicsWebForm.aspx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="MasterStyleSheet.css" />
+    <Content Include="StyleSheets\MasterStyleSheet.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -400,13 +404,6 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
-    <Compile Include="Contact.aspx.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Contact.aspx.designer.cs">
-      <DependentUpon>Contact.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -441,47 +438,54 @@
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
-    <Compile Include="HomeWebForm.aspx.cs">
+    <Compile Include="WebPages\HomeWebForm.aspx.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HomeWebForm.aspx.designer.cs">
+    <Compile Include="WebPages\HomeWebForm.aspx.designer.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="SkillsWebForm.aspx.cs">
+    <Compile Include="WebPages\SkillsWebForm.aspx.cs">
       <DependentUpon>SkillsWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="SkillsWebForm.aspx.designer.cs">
+    <Compile Include="WebPages\SkillsWebForm.aspx.designer.cs">
       <DependentUpon>SkillsWebForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ProjectsWebForm.aspx.cs">
+    <Compile Include="WebPages\ProjectsWebForm.aspx.cs">
       <DependentUpon>ProjectsWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ProjectsWebForm.aspx.designer.cs">
+    <Compile Include="WebPages\ProjectsWebForm.aspx.designer.cs">
       <DependentUpon>ProjectsWebForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="AboutWebForm.aspx.cs">
+    <Compile Include="WebPages\AboutWebForm.aspx.cs">
       <DependentUpon>AboutWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="AboutWebForm.aspx.designer.cs">
+    <Compile Include="WebPages\AboutWebForm.aspx.designer.cs">
       <DependentUpon>AboutWebForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Monopoly.aspx.cs">
+    <Compile Include="WebPages\Monopoly.aspx.cs">
       <DependentUpon>Monopoly.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Monopoly.aspx.designer.cs">
+    <Compile Include="WebPages\Monopoly.aspx.designer.cs">
       <DependentUpon>Monopoly.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ImageWebForm.aspx.cs">
+    <Compile Include="WebPages\ImageWebForm.aspx.cs">
       <DependentUpon>ImageWebForm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ImageWebForm.aspx.designer.cs">
+    <Compile Include="WebPages\ImageWebForm.aspx.designer.cs">
       <DependentUpon>ImageWebForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\GraphicsWebForm.aspx.cs">
+      <DependentUpon>GraphicsWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\GraphicsWebForm.aspx.designer.cs">
+      <DependentUpon>GraphicsWebForm.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

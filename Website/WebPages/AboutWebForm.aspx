@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AboutWebForm.aspx.cs" Inherits="Website.WebForm4" %>
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="AboutStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\AboutStyleSheet.css">
 </asp:Content>
 
 
@@ -17,8 +17,9 @@
         </div>
         <h3>Why make this?</h3>
         <div id="about">
-            I made this website as a personal project as a way to start building my skills on ASP.NET and web development. However, I am using this oppurtunity to add my other projects on it. 
-            I am still unemployed and looking for a Graduate Oppurtunity in Scotland. Potential Employers can view this and check if they are interested.
+            I made this website as a personal project as a way to start building my skills on ASP.NET and web development. However, I am using this oppurtunity to add my other projects on it. I am still unemployed and looking for a Graduate Oppurtunity in Scotland. Potential Employers can view my projects. Check out my
+            <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="#000066" NavigateUrl="~/WebPages/SkillsWebForm.aspx">Skill Page</asp:HyperLink>
+&nbsp;to see what technologies I have worked with.
         </div>
     </div>
 </asp:Content>

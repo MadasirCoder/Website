@@ -2,11 +2,12 @@
     font-size:22px;
 }
 
-#Monopoly{
+#Monopoly,#Website,#Graphics{
     border:10px solid red;
     border-color:green;
     border-radius:20px;
     padding: 0px 10px;
+    margin:40px;
 }
 h2{
     color:red;

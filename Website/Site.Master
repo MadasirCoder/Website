@@ -5,31 +5,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Madasir's Projects</title>
-     <asp:ContentPlaceHolder ID="head" runat="server">
-
-        </asp:ContentPlaceHolder>
-    <link rel="stylesheet" type="text/css" href="MasterStyleSheet.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" type="text/css" href="StyleSheets/MasterStyleSheet.css" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id ="header">
-        <a href="HomeWebForm">Madasir's Project</a>
-    </div>
-      <nav><ul>
-			<li><a href="ProjectsWebForm">HOMEMADE PROJECTS</a></li>
-			<li><a href="SkillsWebForm">SKILLS</a></li>
-			<li><a href="AboutWebForm">ABOUT</a></li>
-          <li><a href="AboutWebForm">CONTACT</a></li>
-	</ul></nav>
-   
+        <div id="header">
+            <a href="HomeWebForm">Madasir's Project</a>
+        </div>
+        <nav>
+            <ul>
+                <%--<li><a href="">HOMEMADE PROJECTS</a></li>
+                <li><a href="WebPages/SkillsWebForm.aspx">SKILLS</a></li>
+                <li><a href="WebPages/AboutWebForm.aspx">ABOUT</a></li>
+                <li><a href="WebPages/AboutWebForm.aspx">CONTACT</a></li>--%>
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebPages/ProjectsWebForm.aspx">PROJECTS</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebPages/SkillsWebForm.aspx">SKILLS</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/WebPages/AboutWebForm.aspx">ABOUT</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/WebPages/Contact.aspx">CONTACT</asp:HyperLink>
+            </ul>
+        </nav>
+
 
         <div id="content">
-        <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
-             This is a test
-        </asp:ContentPlaceHolder>
+            <asp:ContentPlaceHolder ID="MainContentPlaceHolder" runat="server">
+                This is a test
+            </asp:ContentPlaceHolder>
         </div>
-        
-        <div id ="footer">
+
+        <div id="footer">
             <p>Copyright © 2016, My Personal website | by Madasir Ahmed</p>
         </div>
 

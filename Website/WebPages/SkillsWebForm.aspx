@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SkillsWebForm.aspx.cs" Inherits="Website.WebForm2" %>
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="SkillsStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\SkillsStyleSheet.css">
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">

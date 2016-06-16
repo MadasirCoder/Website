@@ -1,24 +1,30 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Monopoly.aspx.cs" Inherits="Website.WebForm5" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="MonopolyStyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\MonopolyStyleSheet.css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     <div id="cont">
         <div id="large">Description</div>
         <div id="introduction">
-            Monopoly transcation tool is a way to play monopoly without the use of physcial cash or the card electronic system that some monopoly editions comes with now. Its a easy fast click system and gives users/players good feedback when transcations occur.
+            Monopoly transacation tool is a way to play monopoly without the use of physcial cash or the card electronic system that some monopoly editions comes with now. Its a easy fast click system and gives users/players good feedback when transcations occur.
             <br />
             <br />
             Note: This application was developed using my family rules which differ from other monopoly rules. The new rules don&#39;t change the game too much. The list of rules are at the bottom of the page.
         </div>
 
+        <br />
+        <br />
         <div id="Skills">
             <div id="large2">Skills Used</div>
             Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern
-            </div>
+        </div>
 
-        
+        <div id="Download">
+            <div id="large6">Download Runnable Jar File</div>
+            <a href="Monopoly.jar"><span>Download here</span></a>
+        </div>
+
         <div id="large3">Pictures</div>
         <div id="panel">
             <asp:Panel ID="Panel1" runat="server" BorderColor="Blue" BorderStyle="Dashed">

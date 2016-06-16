@@ -16,7 +16,7 @@ a {
 }
 
 body {
-    background-image:url('Images/background.jpg');
+    background-image:url('../Images/background.jpg');
     background-repeat:no-repeat;
     background-attachment:fixed;
     margin:5px;
@@ -38,6 +38,7 @@ nav a {
 text-decoration:none; 
 font-size: 20px;
 color: blue;
+padding-right:50px;
 }
 
 nav a:hover{
