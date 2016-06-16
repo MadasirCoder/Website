@@ -13,48 +13,66 @@
         <br />
         <br />
     </div>
-     <div id="MainFlag">
-    <div id="Flag">
-        <div class="large">Flag Project</div>
-        <div class="introduction">
-            This project involved creating a nation flag using the Java Graphics Library. Main challenge was resizing the flag image when a user resizes the flag window. The height and width of the flag has to be the same ratio. Download the jar and check it out yourself!
+    <div id="MainFlag">
+        <div id="Flag">
+            <div class="large">Flag Project</div>
+            <div class="introduction">
+                This project involved creating a nation flag using the Java Graphics Library. Main challenge was resizing the flag image when a user resizes the flag window. The height and width of the flag has to be the same ratio. Download the jar and check it out yourself!
         <br />
-            <br />
+                <br />
+            </div>
+
+            <div class="Skills">
+                <div class="large">Skills Used</div>
+                Technology Used: Java - Object Oriented, Graphics Library
+            </div>
+
+            <div class="Download">
+                <div class="large">Download Runnable Jar File</div>
+                <a href="..\Jars\Flag.jar"><span>Download here</span></a>
+            </div>
         </div>
 
-        <div class="Skills">
-            <div class="large">Skills Used</div>
-            Technology Used: Java - Object Oriented, Graphics Library
-        </div>
+        <div id="FlagImage">
 
-        <div class="Download">
-            <div class="large">Download Runnable Jar File</div>
-            <a href="..\Jars\Flag.jar"><span>Download here</span></a>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Flag.PNG" />
+
         </div>
     </div>
 
-    <div id="FlagImage">
-
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/Flag.PNG" />
-
-    </div>
-         </div>
-
-    <div class="large">Watch Project</div>
-    <div class="introduction">
-        This project involved creating a watch and using Threads to tick the clock per second. I choose to make the rolex watch which is challenging. Main challenge I faced was drawing out the inner circle content. 
+    <div id="MainWatch">
+        <div id="Watch">
+            <div class="large">Watch Project</div>
+            <div class="introduction">
+                This project involved creating a watch and using Threads to tick the clock per second. I choose to make the rolex watch which is challenging. Main challenge I faced was getting the clock animation working.
+        Clock also has a stopwatch feature. 
         <br />
-        <br />
-    </div>
+                <br />
+            </div>
 
-    <div class="Skills">
-        <div class="large">Skills Used</div>
-        Technology Used: Java - Object Oriented, Graphics Library
-    </div>
+            <div class="large">Instructions</div>
+            <div class="mainIntroduction">
+                How to use the stopwatch:
+             <ul>
+                 <li>Press p: To start the stopwatch.</li>
+                 <li>Press o: To stop the stopwatch.</li>
+                 <li>Press q: To reset the stopwatch.</li>
+             </ul>
+            </div>
+            <div class="Skills">
+                <div class="large">Skills Used</div>
+                Technology Used: Java - Object Oriented, Graphics Library
+            </div>
 
-    <div class="Download">
-        <div class="large">Download Runnable Jar File</div>
-        <a href="..\Jars\Flag.jar"><span>Download here</span></a>
+            <div class="Download">
+                <div class="large">Download Runnable Jar File</div>
+                <a href="..\Jars\Watch.jar"><span>Download here</span></a>
+            </div>
+        </div>
+        <div id="WatchImage">
+            <asp:Image ID="Image3" runat="server" ImageUrl="~/Images/Watch.PNG" />
+
+        </div>
     </div>
 
 </asp:Content>

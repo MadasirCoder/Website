@@ -27,7 +27,7 @@
 }
 
 .Download{
-    margin-bottom:60px;
+    margin-bottom:90px;
     color:blue;
 }
 
@@ -51,4 +51,21 @@
 a span{
     color:blue;
     text-decoration:underline;
+}
+
+#MainWatch{
+    overflow: hidden;
+}
+
+#Watch{
+    float:left;
+    width:70%;
+    height:100%;
+}
+
+#WatchImage{
+   float:left;
+     width:20%;
+    height:100%;
+    margin-left:10px;
 }
