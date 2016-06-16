@@ -9,26 +9,45 @@
     
 }
 
-#introduction{
+.introduction{
     border:solid;
     margin-bottom:30px;
     margin-top:2px;
     padding:10px;
 }
 
-#panel{
-    margin-bottom:49px;
+.mainIntroduction{
+    margin-bottom:30px;
+    margin-top:2px;
+    padding:10px;
 }
 
-#Skills{
+.Skills{
     margin-bottom:50px;
 }
 
-#Download{
+.Download{
     margin-bottom:60px;
     color:blue;
 }
 
+#MainFlag{
+    overflow: hidden;
+}
+
+#Flag{
+    float:left;
+    width:60%;
+    height:100%;
+    /*border-style:solid;
+    border-color:black;*/
+}
+
+#FlagImage{
+   float:left;
+     width:40%;
+    height:100%;
+}
 a span{
     color:blue;
     text-decoration:underline;

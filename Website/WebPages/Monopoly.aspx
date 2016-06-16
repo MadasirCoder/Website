@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
     <div id="cont">
-        <div id="large">Description</div>
+        <div class="large">Description</div>
         <div id="introduction">
             Monopoly transacation tool is a way to play monopoly without the use of physcial cash or the card electronic system that some monopoly editions comes with now. Its a easy fast click system and gives users/players good feedback when transcations occur.
             <br />
@@ -16,23 +16,23 @@
         <br />
         <br />
         <div id="Skills">
-            <div id="large2">Skills Used</div>
+            <div class="large">Skills Used</div>
             Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern
         </div>
 
         <div id="Download">
-            <div id="large6">Download Runnable Jar File</div>
-            <a href="Monopoly.jar"><span>Download here</span></a>
+            <div class="large">Download Runnable Jar File</div>
+            <a href="..\Jars\Monopoly.jar"><span>Download here</span></a>
         </div>
 
-        <div id="large3">Pictures</div>
+        <div class="large">Pictures</div>
         <div id="panel">
             <asp:Panel ID="Panel1" runat="server" BorderColor="Blue" BorderStyle="Dashed">
             </asp:Panel>
         </div>
 
         <div id="rules">
-            <div id="large4">Rules</div>
+            <div class="large">Rules</div>
             1) If a player lands on the Income Tax or Super Tax tile, he/she needs to put the tax money on the free parking.<br />
             2) If a player lands on the Free Parking Tile, he/she will collect the whatever money lying there at that period.<br />
             3) There&#39;s no Auctions in this game. If a player doesn&#39;t want to buy the property, then the game simply moves to the next players turn to roll the dice.<br />

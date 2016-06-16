@@ -15,6 +15,7 @@
                 <li>Object Oriented Principles</li>
                 <li>MVC</li>
                 <li>Graphical User Interfaces(Swing)</li>
+                <li>Java Graphics Library</li>
                 <li>Lightwight Java game Library(LWJGL)</li>
                 <li>Some design patterns(Observer and Strategy)</li>
             </ul>
