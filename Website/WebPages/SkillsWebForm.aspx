@@ -11,8 +11,8 @@
         </div>
         <div id="skills">
             Java
-            <ul id="skillsul">
-                <li>Object Oriented Principles</li>
+            <ul class="skillsul">
+                <li>Object Oriented Principless</li>
                 <li>MVC</li>
                 <li>Graphical User Interfaces(Swing)</li>
                 <li>Java Graphics Library</li>
@@ -20,14 +20,23 @@
                 <li>Some design patterns(Observer and Strategy)</li>
             </ul>
             C# .NET
-            <ul id="skillsul">
+            <ul class="skillsul">
                 <li>Object oriented</li>
                 <li>Microsoft SQL Databases</li>
             </ul>
             Website Development Skills
-            <ul id="skillsul">
+            <ul class="skillsul">
                 <li>ASP.NET</li>
                 <li>MySQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+            </ul>
+            Testing
+            <ul class="skillsul">
+                <li>JUnit(Java)</li>
+                <li>Validation Testing</li>
                 <li>HTML5</li>
                 <li>CSS3</li>
                 <li>Javascript</li>
