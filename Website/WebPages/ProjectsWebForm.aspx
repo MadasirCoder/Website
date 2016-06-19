@@ -32,7 +32,7 @@
                 <asp:HyperLink ID="HyperLink3" runat="server" ImageUrl="~/Images/Graphics.png" href="GraphicsWebForm.aspx"></asp:HyperLink>
             </p>
             <p>Second Year Assignment</p>
-            <p>Technology Used: Java - Object Oriented, Graphics Library</p>
+            <p>Technology Used: Java - Object Oriented, Graphics Library, Maths Skills</p>
         </div>
     </div>
 </asp:Content>

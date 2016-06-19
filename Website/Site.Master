@@ -12,7 +12,7 @@
 <body>
     <form id="form1" runat="server">
         <div id="header">
-            <a href="HomeWebForm">Madasir's Project</a>
+            <a href="HomeWebForm.aspx">Madasir's Project</a>
         </div>
         <nav>
             <ul>
@@ -20,6 +20,7 @@
                 <li><a href="WebPages/SkillsWebForm.aspx">SKILLS</a></li>
                 <li><a href="WebPages/AboutWebForm.aspx">ABOUT</a></li>
                 <li><a href="WebPages/AboutWebForm.aspx">CONTACT</a></li>--%>
+                <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/WebPages/HomeWebForm.aspx">HOME</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebPages/ProjectsWebForm.aspx">PROJECTS</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebPages/SkillsWebForm.aspx">SKILLS</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/WebPages/AboutWebForm.aspx">ABOUT</asp:HyperLink>

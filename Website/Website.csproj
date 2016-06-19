@@ -183,6 +183,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Flag.PNG" />
+    <Content Include="Images\PeriodicTable.jpg" />
     <Content Include="Images\Watch.PNG" />
     <Content Include="Jars\Flag.jar" />
     <Content Include="Jars\Watch.jar" />
@@ -225,6 +226,7 @@
     <Content Include="WebPages\ImageWebForm.aspx" />
     <Content Include="WebPages\GraphicsWebForm.aspx" />
     <Content Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Website.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="StyleSheets\MasterStyleSheet.css" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />

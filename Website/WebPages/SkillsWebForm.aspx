@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="SkillsWebForm.aspx.cs" Inherits="Website.WebForm2" %>
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="..\StyleSheets\SkillsStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\SkillsStyleSheet.css"/>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -37,10 +37,6 @@
             <ul class="skillsul">
                 <li>JUnit(Java)</li>
                 <li>Validation Testing</li>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>Javascript</li>
-                <li>PHP</li>
             </ul>
             Strong Math Skills
         </div>

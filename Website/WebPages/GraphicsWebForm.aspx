@@ -24,7 +24,7 @@
 
             <div class="Skills">
                 <div class="large">Skills Used</div>
-                Technology Used: Java - Object Oriented, Graphics Library
+                Technology Used: Java - Object Oriented, Graphics Library, Maths Skills
             </div>
 
             <div class="Download">
@@ -61,7 +61,7 @@
             </div>
             <div class="Skills">
                 <div class="large">Skills Used</div>
-                Technology Used: Java - Object Oriented, Graphics Library
+                Technology Used: Java - Object Oriented, Graphics Library, Maths Skills
             </div>
 
             <div class="Download">
