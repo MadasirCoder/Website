@@ -191,8 +191,10 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="StyleSheets\ContactStyleSheet.css" />
     <Content Include="StyleSheets\GraphicsStyleSheet.css" />
     <Content Include="StyleSheets\HomeStyleSheet.css" />
+    <Content Include="WebPages\ContactWebForm.aspx" />
     <Content Include="WebPages\HomeWebForm.aspx" />
     <Content Include="Images\background.jpg" />
     <Content Include="Images\Graphics.png" />
@@ -280,6 +282,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\ContactWebForm.aspx.cs">
+      <DependentUpon>ContactWebForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\ContactWebForm.aspx.designer.cs">
+      <DependentUpon>ContactWebForm.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\HomeWebForm.aspx.cs">
       <DependentUpon>HomeWebForm.aspx</DependentUpon>

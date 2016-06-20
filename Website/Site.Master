@@ -24,7 +24,7 @@
                 <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebPages/ProjectsWebForm.aspx">PROJECTS</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/WebPages/SkillsWebForm.aspx">SKILLS</asp:HyperLink>
                 <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/WebPages/AboutWebForm.aspx">ABOUT</asp:HyperLink>
-                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/WebPages/Contact.aspx">CONTACT</asp:HyperLink>
+                <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/WebPages/ContactWebForm.aspx">CONTACT</asp:HyperLink>
             </ul>
         </nav>
 

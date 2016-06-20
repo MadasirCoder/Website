@@ -1,0 +1,22 @@
+﻿.tbl {
+  display: table;
+}
+.tbl > div {
+  display: table-row;
+}
+.tbl > div > * {
+  display: table-cell;
+}
+.tbl > div > span {
+  text-align: right;
+  padding-right: 10px;
+  font-size:20px;
+}
+
+#intro{
+    font-size:20px;
+}
+
+p{
+    /*font-size:40px;*/
+}
