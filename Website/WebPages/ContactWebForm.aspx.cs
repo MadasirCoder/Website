@@ -11,17 +11,12 @@ namespace Website
 {
     public partial class WebForm8 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
 
-
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-
-        }
 
         protected void Submit_Click(object sender, EventArgs e)
         {
@@ -53,9 +48,13 @@ namespace Website
                 })
                 {
                     smtp.Send(message);
-                    lblMessage.Text = "Your message has been sent.";
-                    lblMessage.ForeColor = System.Drawing.Color.Black;
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('" + "Your message has been sent." + "\\n" +
+                         "Your Name/Company: " + name.Text.ToString() + "\\n" + 
+                         "Your Email: " + email.Text.ToString() + "');", true);
                 }
+                name.Text = "";
+                email.Text = "";
+                message.Text = "";
             }
             catch (Exception ex)
             {
