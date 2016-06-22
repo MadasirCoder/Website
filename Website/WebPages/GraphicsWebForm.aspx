@@ -29,7 +29,7 @@
 
             <div class="Download">
                 <div class="large">Download Runnable Jar File</div>
-                <a href="..\Jars\Flag.jar"><span>Download here</span></a>
+                <a href="..\Jars\FlagOb.jar"><span>Download here</span></a>
             </div>
         </div>
 
@@ -66,7 +66,7 @@
 
             <div class="Download">
                 <div class="large">Download Runnable Jar File</div>
-                <a href="..\Jars\Watch.jar"><span>Download here</span></a>
+                <a href="..\Jars\WatchOb.jar"><span>Download here</span></a>
             </div>
         </div>
         <div id="WatchImage">

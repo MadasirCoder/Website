@@ -183,10 +183,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\Flag.PNG" />
+    <Content Include="Images\loading.gif" />
     <Content Include="Images\PeriodicTable.jpg" />
     <Content Include="Images\Watch.PNG" />
     <Content Include="Jars\Flag.jar" />
+    <Content Include="Jars\FlagOb.jar" />
+    <Content Include="Jars\MonopolyOb.jar" />
     <Content Include="Jars\Watch.jar" />
+    <Content Include="Jars\WatchOb.jar" />
     <Content Include="StyleSheets\AboutStyleSheet.css" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
