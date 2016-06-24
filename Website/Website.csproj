@@ -182,6 +182,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\conways.png" />
     <Content Include="Images\Flag.PNG" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\PeriodicTable.jpg" />
@@ -196,8 +197,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="StyleSheets\ContactStyleSheet.css" />
+    <Content Include="StyleSheets\GameofLifeStyleSheet.css" />
     <Content Include="StyleSheets\GraphicsStyleSheet.css" />
     <Content Include="StyleSheets\HomeStyleSheet.css" />
+    <Content Include="WebPages\GameofLife.aspx" />
     <Content Include="WebPages\ContactWebForm.aspx" />
     <Content Include="WebPages\HomeWebForm.aspx" />
     <Content Include="Images\background.jpg" />
@@ -286,6 +289,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\GameofLife.aspx.cs">
+      <DependentUpon>GameofLife.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\GameofLife.aspx.designer.cs">
+      <DependentUpon>GameofLife.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\ContactWebForm.aspx.cs">
       <DependentUpon>ContactWebForm.aspx</DependentUpon>

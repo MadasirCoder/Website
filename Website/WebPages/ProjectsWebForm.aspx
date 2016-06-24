@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProjectsWebForm.aspx.cs" Inherits="Website.WebForm3" %>
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="..\StyleSheets\ProjectsStyleSheet.css">
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\ProjectsStyleSheet.css"/>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -34,5 +34,15 @@
             <p>Second Year Assignment</p>
             <p>Technology Used: Java - Object Oriented, Graphics Library, Maths Skills</p>
         </div>
+
+          <div id="final">
+            <h2>Conway's Game of Life(Final Year Project)</h2>
+            <p>
+                <asp:HyperLink ID="HyperLink4" runat="server" ImageUrl="~/Images/conways.png" href="GameofLife.aspx"></asp:HyperLink>
+            </p>
+            <p>Final Year Dissertation</p>
+            <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern, Strategy Pattern, JUnit </p>
+        </div>
+
     </div>
 </asp:Content>
