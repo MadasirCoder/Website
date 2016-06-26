@@ -50,7 +50,12 @@
                 <br />
             </div>
 
-            <div class="large">Instructions</div>
+            <div class="Skills">
+                <div class="large">Skills Used</div>
+                Technology Used: Java - Object Oriented, Graphics Library, Maths Skills
+            </div>
+
+                        <div class="large">Instructions</div>
             <div class="mainIntroduction">
                 How to use the stopwatch:
              <ul>
@@ -58,10 +63,6 @@
                  <li>Press o: To stop the stopwatch.</li>
                  <li>Press q: To reset the stopwatch.</li>
              </ul>
-            </div>
-            <div class="Skills">
-                <div class="large">Skills Used</div>
-                Technology Used: Java - Object Oriented, Graphics Library, Maths Skills
             </div>
 
             <div class="Download">

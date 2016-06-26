@@ -1,0 +1,42 @@
+﻿body {
+    font-size:22px;
+}
+
+.large{
+    font-size:30px;
+    color:red;
+    text-decoration:underline;
+    
+}
+
+.introduction{
+    border:solid;
+    margin-bottom:30px;
+    margin-top:2px;
+    padding:10px;
+}
+
+#panel{
+    margin-bottom:49px;
+}
+
+#Skills{
+    margin-bottom:50px;
+}
+
+
+.mainIntroduction{
+    margin-bottom:30px;
+    margin-top:2px;
+    padding:10px;
+}
+
+#Download{
+    margin-bottom:60px;
+    color:blue;
+}
+
+a span{
+    color:blue;
+    text-decoration:underline;
+}

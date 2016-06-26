@@ -186,6 +186,7 @@
     <Content Include="Images\Flag.PNG" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\PeriodicTable.jpg" />
+    <Content Include="Images\Race.PNG" />
     <Content Include="Images\Watch.PNG" />
     <Content Include="Jars\Flag.jar" />
     <Content Include="Jars\FlagOb.jar" />
@@ -200,6 +201,8 @@
     <Content Include="StyleSheets\GameofLifeStyleSheet.css" />
     <Content Include="StyleSheets\GraphicsStyleSheet.css" />
     <Content Include="StyleSheets\HomeStyleSheet.css" />
+    <Content Include="StyleSheets\RaceStyleSheet.css" />
+    <Content Include="WebPages\3DRaceWorld.aspx" />
     <Content Include="WebPages\GameofLife.aspx" />
     <Content Include="WebPages\ContactWebForm.aspx" />
     <Content Include="WebPages\HomeWebForm.aspx" />
@@ -289,6 +292,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\3DRaceWorld.aspx.cs">
+      <DependentUpon>3DRaceWorld.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\3DRaceWorld.aspx.designer.cs">
+      <DependentUpon>3DRaceWorld.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\GameofLife.aspx.cs">
       <DependentUpon>GameofLife.aspx</DependentUpon>

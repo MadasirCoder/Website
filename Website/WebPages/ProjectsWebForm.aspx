@@ -44,5 +44,14 @@
             <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern, Strategy Pattern, JUnit </p>
         </div>
 
+             <div id="race">
+            <h2>3D Race World</h2>
+            <p>
+                <asp:HyperLink ID="HyperLink5" runat="server" ImageUrl="~/Images/Race.PNG" href="3DRaceWorld.aspx"></asp:HyperLink>
+            </p>
+            <p>3rd Year Graphics Class Group Project</p>
+            <p>Technology Used: Java - Object Oriented, LWJGL, 3D Graphics, Teamwork</p>
+        </div>
+
     </div>
 </asp:Content>
