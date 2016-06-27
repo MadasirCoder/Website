@@ -1,7 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProjectsWebForm.aspx.cs" Inherits="Website.WebForm3" %>
 
 <asp:Content ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="..\StyleSheets\ProjectsStyleSheet.css"/>
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\ProjectsStyleSheet.css" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79954652-1', 'auto');
+        ga('send', 'pageview');
+
+
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -35,7 +48,7 @@
             <p>Technology Used: Java - Object Oriented, Graphics Library, Maths Skills</p>
         </div>
 
-          <div id="final">
+        <div id="final">
             <h2>Conway's Game of Life(Final Year Project)</h2>
             <p>
                 <asp:HyperLink ID="HyperLink4" runat="server" ImageUrl="~/Images/conways.png" href="GameofLife"></asp:HyperLink>
@@ -44,7 +57,7 @@
             <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern, Strategy Pattern, JUnit, Validation Testing </p>
         </div>
 
-             <div id="race">
+        <div id="race">
             <h2>3D Race World</h2>
             <p>
                 <asp:HyperLink ID="HyperLink5" runat="server" ImageUrl="~/Images/Race.PNG" href="3DRaceWorld"></asp:HyperLink>
@@ -53,7 +66,7 @@
             <p>Technology Used: Java - Object Oriented, LWJGL, 3D Graphics, Teamwork</p>
         </div>
 
-             <div id="gizmo">
+        <div id="gizmo">
             <h2>Gizmoball</h2>
             <p>
                 <asp:HyperLink ID="HyperLink6" runat="server" ImageUrl="~/Images/Gizmoball.PNG" href="Gizmoball"></asp:HyperLink>

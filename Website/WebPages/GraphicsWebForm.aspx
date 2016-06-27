@@ -2,6 +2,18 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <link rel="stylesheet" type="text/css" href="../StyleSheets/GraphicsStyleSheet.css" />
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-79954652-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </asp:Content>
 
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
@@ -55,7 +67,7 @@
                 Technology Used: Java - Object Oriented, Graphics Library, Maths Skills
             </div>
 
-                        <div class="large">Instructions</div>
+            <div class="large">Instructions</div>
             <div class="mainIntroduction">
                 How to use the stopwatch:
              <ul>
