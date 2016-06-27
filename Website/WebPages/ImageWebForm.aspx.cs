@@ -18,7 +18,7 @@ namespace Website
         }
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Monopoly.aspx");
+            Response.Redirect("Monopoly");
         }
     }
 }

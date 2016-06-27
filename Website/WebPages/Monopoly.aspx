@@ -7,7 +7,7 @@
     <div id="cont">
         <div class="large">Description</div>
         <div id="introduction">
-            Monopoly transacation tool is a way to play monopoly without the use of physcial cash or the card electronic system that some monopoly editions comes with now. Its a easy fast click system and gives users/players good feedback when transcations occur.
+            Monopoly transaction tool is a way to play monopoly without the use of physical cash or the card electronic system that some monopoly editions comes with now. Its a easy fast click system and gives users/players good feedback when transactions occur.
             <br />
             <br />
             Note: This application was developed using my family rules which differ from other monopoly rules. The new rules don&#39;t change the game too much. The list of rules are at the bottom of the page.

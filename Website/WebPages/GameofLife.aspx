@@ -19,12 +19,12 @@
             <br />
             <br />
             For more information about the game, visit the 
-            <asp:HyperLink ID="HyperLink6" runat="server" ForeColor="#9900CC" NavigateUrl="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wiki</asp:HyperLink>
+            <asp:HyperLink ID="HyperLink6" Target="_blank" runat="server" ForeColor="#9900CC" NavigateUrl="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wiki</asp:HyperLink>
             &nbsp;page of the game.
             <br />
             <br />
         </div>
-         <div class="large">Rules</div>
+        <div class="large">Rules</div>
         In the normal square verion, each Square cell has 8 neighbours which are horizontally, vertically, or diagonally adjacent to the cell. 
         <br />
         A cell can survive if it has 2 or 3 alive neighbours around it.
@@ -37,47 +37,116 @@
             Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern, Strategy Pattern, JUnit
         </div>
 
+        <div class="large">Two modes</div>
+        The game has two modes, run mode and build mode.
+        <div id="run">
+            In run mode, a user can:
+         <ul>
+             <li>Run/Stop game.</li>
+             <li>Move around the grid during runtime</li>
+             <li>Check statistics.</li>
+             <li>Set up a custom number of steps.</li>
+             <li>Change the speed.</li>
+             <li>Move back in game.</li>
+             <li>Remove the gridlines</li>
+         </ul>
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/RunMode.PNG" />
+        </div>
+        <br/>
+        <div id="build">
+            In build mode, a user can:
+         <ul>
+             <li>Add/Delete alive cells to the game.</li>
+             <li>Add already made patterns.</li>
+             <li>Change the shape and colour of an alive cell.</li>
+             <li>Clear the board.</li>
+             <li>Change the rules.</li>
+         </ul>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/BuildMode.PNG" />
+        </div>
+        <br/>
+        <br/>
         <div class="large">Videos</div>
         The video's only shows the game board. The menu has been taken out.
         <br />
         <div class="small">Gosper glider gun</div>
         A configuration that creates glider shapes non-stop. In this video I show the remove gridline feature and the shapes travelling in the grid.
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/qyf8OzT_LTs" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/Gosper Glider.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Modified rules</div>
-        A change of rules where a alive call can survive with 1 alive neighbour or a dead cell can become alive if it has 1 alive neighbour. You can slow down the video if it's too fast.
+        A change of rules where a alive call can survive with 1 alive neighbour or a dead cell can become alive if it has 1 alive neighbour. Speed of the game has been increased to max.
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/0lVC8GgDrvw" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/GOL 11.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Univeral Grid Movement</div>
         This video shows games universal grid movment. It gives you an unlimited feel. You can travel anywhere on board. Follow a glider(Travelling shape) forever. 
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/ifOkoUP7nk0" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/GOL Grid Movement.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Scottish Game of Life!</div>
         You can change the shape and colour of the Square cells. 
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/RxUQJj5ypdQ" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/Scot.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <div class="small">Wall of death!</div>
         This video shows fixed cells(red coloured). These cells don't count as a neighbour and will not change colour.
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/kVBL6oJhous" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/GOL Wall of death.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Virus</div>
         Changed the rule so that any number of alive neighbours(not 0) around a cell can turn the cell alive or stay alive. 
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/jVEmFR_HU64" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/GOL Virus.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Triangle Version</div>
         Triangle version of game of life with each triangle cell has 12 neighbours. 
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/IGNOP8aJlM8" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/Triangle Normal Rules.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
         <div class="small">Small Triangle Version</div>
         Another Triangle version of game of life except each triangle cell has 14 neighbours. 
         <br />
-        <iframe width="420" height="315" src="https://www.youtube.com/embed/IGNOP8aJlM8" frameborder="0" allowfullscreen></iframe>
+        <br />
+        <video width="460" height="380" controls="">
+            <source src="Videos/Small Triangle Version.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <br />
         <br />
     </div>
 

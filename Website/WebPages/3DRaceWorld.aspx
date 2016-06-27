@@ -7,9 +7,7 @@
     <div id="cont">
         <div class="large">Description</div>
         <div class="introduction">
-            This project involved creating a 3D Race Track using Light Weight Java Game(LWJGL) Library in a team.
-              <br />
-            Though a few elements still needed to complete, project achieved a high mark. 
+            This project involved creating a 3D Race Track using Light Weight Java Game(LWJGL) Library with 3 other students.
               <br />
         </div>
         <br />
@@ -28,22 +26,16 @@
             <div class="large">Skills Used</div>
             Technology Used: Java - Object Oriented, LWJGL, 3D Graphics, Teamwork
         </div>
+            <br/>
+        <br/>
+
+        <div class="large">Videos</div>
+        Video below shows you a demo of the full track and the features mentioned above.
          <br />
         <br />
-
-                    <div class="large">Instructions</div>
-            <div class="mainIntroduction">
-                How to play the game:
-             <ul>
-                 <li>Press up arrow: To start/increase speed.</li>
-                 <li>Press down arrow: To stop/decrease.</li>
-                 <li>Press left arrow: To turn left.</li>
-                 <li>Press right arrow: To turn right.</li>
-             </ul>
-            </div>
-        <div class="Download">
-                <div class="large">Download Runnable Jar File</div>
-                <a href="..\Jars\WatchOb.jar"><span>Download here</span></a>
-            </div>
+        <video width="460" height="380" controls="">
+            <source src="Videos/Race.mp4" type="video/mp4"/>
+            Your browser does not support the video tag.
+        </video>
     </div>
 </asp:Content>

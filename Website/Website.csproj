@@ -182,11 +182,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Images\BuildMode.PNG" />
     <Content Include="Images\conways.png" />
     <Content Include="Images\Flag.PNG" />
+    <Content Include="Images\Gizmoball.PNG" />
     <Content Include="Images\loading.gif" />
     <Content Include="Images\PeriodicTable.jpg" />
     <Content Include="Images\Race.PNG" />
+    <Content Include="Images\RunMode.PNG" />
     <Content Include="Images\Watch.PNG" />
     <Content Include="Jars\Flag.jar" />
     <Content Include="Jars\FlagOb.jar" />
@@ -199,9 +203,21 @@
     </Content>
     <Content Include="StyleSheets\ContactStyleSheet.css" />
     <Content Include="StyleSheets\GameofLifeStyleSheet.css" />
+    <Content Include="StyleSheets\GizmoBallStyleSheet.css" />
     <Content Include="StyleSheets\GraphicsStyleSheet.css" />
     <Content Include="StyleSheets\HomeStyleSheet.css" />
     <Content Include="StyleSheets\RaceStyleSheet.css" />
+    <Content Include="Videos\Gizmo.mp4" />
+    <Content Include="Videos\GOL 11.mp4" />
+    <Content Include="Videos\GOL Grid Movement.mp4" />
+    <Content Include="Videos\GOL Virus.mp4" />
+    <Content Include="Videos\GOL Wall of death.mp4" />
+    <Content Include="Videos\Gosper Glider.mp4" />
+    <Content Include="Videos\Race.mp4" />
+    <Content Include="Videos\Scot.mp4" />
+    <Content Include="Videos\Small Triangle Version.mp4" />
+    <Content Include="Videos\Triangle Normal Rules.mp4" />
+    <Content Include="WebPages\Gizmoball.aspx" />
     <Content Include="WebPages\3DRaceWorld.aspx" />
     <Content Include="WebPages\GameofLife.aspx" />
     <Content Include="WebPages\ContactWebForm.aspx" />
@@ -285,6 +301,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -292,6 +311,13 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebPages\Gizmoball.aspx.cs">
+      <DependentUpon>Gizmoball.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebPages\Gizmoball.aspx.designer.cs">
+      <DependentUpon>Gizmoball.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\3DRaceWorld.aspx.cs">
       <DependentUpon>3DRaceWorld.aspx</DependentUpon>

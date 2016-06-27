@@ -12,13 +12,13 @@
         </div>
         <h3>About me?</h3>
         <div id="who">
-            I have graduated in computer science in July 2015 at University of Strathclyde and obtained a 2.1.
+            I have received 2.1 in my degree in Computer Science from University of Strathclyde, July 2015.
               
         </div>
-        <h3>Why make this?</h3>
+        <h3>About this site?</h3>
         <div id="about">
-            I made this website as a personal project as a way to start building my skills on ASP.NET and web development. However, I am using this oppurtunity to add my other projects on it. I am still unemployed and looking for a Graduate Oppurtunity in Scotland. Potential Employers can view my projects. Check out my
-            <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="#000066" NavigateUrl="~/WebPages/SkillsWebForm.aspx">Skill Page</asp:HyperLink>
+            I made this website as a personal project as a way to start building my skills on ASP.NET and web development. However, I am using this opportunity to add other projects I have worked on. I am currently unemployed and looking for a graduate opportunity in Scotland. Potential employers can view my projects and skills to determine if I am suitable for the position. Check out my
+            <asp:HyperLink ID="HyperLink5" runat="server" ForeColor="#000066" href="Skills">Skill Page</asp:HyperLink>
             to see what technologies I have worked with.
         </div>
     </div>
