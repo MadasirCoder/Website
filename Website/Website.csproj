@@ -202,6 +202,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="StyleSheets\ContactStyleSheet.css" />
+    <Content Include="StyleSheets\FootballTableStyleSheet.css" />
     <Content Include="StyleSheets\GameofLifeStyleSheet.css" />
     <Content Include="StyleSheets\GizmoBallStyleSheet.css" />
     <Content Include="StyleSheets\GraphicsStyleSheet.css" />
@@ -217,6 +218,7 @@
     <Content Include="Videos\Scot.mp4" />
     <Content Include="Videos\Small Triangle Version.mp4" />
     <Content Include="Videos\Triangle Normal Rules.mp4" />
+    <Content Include="WebForm12.aspx" />
     <Content Include="WebPages\Gizmoball.aspx" />
     <Content Include="WebPages\3DRaceWorld.aspx" />
     <Content Include="WebPages\GameofLife.aspx" />
@@ -304,6 +306,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="iTeam.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -311,6 +314,14 @@
     </Compile>
     <Compile Include="Site.Master.designer.cs">
       <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Team.cs" />
+    <Compile Include="WebForm12.aspx.cs">
+      <DependentUpon>WebForm12.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm12.aspx.designer.cs">
+      <DependentUpon>WebForm12.aspx</DependentUpon>
     </Compile>
     <Compile Include="WebPages\Gizmoball.aspx.cs">
       <DependentUpon>Gizmoball.aspx</DependentUpon>
