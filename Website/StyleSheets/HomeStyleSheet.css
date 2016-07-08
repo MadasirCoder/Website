@@ -1,2 +1,13 @@
 ﻿body {
+
+}
+
+#middle {
+  width: 100%;
+  text-align: center;
+  
+}
+
+#middleImage {
+  display: inline-block;
 }

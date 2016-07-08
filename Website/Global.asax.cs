@@ -60,6 +60,8 @@ namespace Website
             routes.MapPageRoute("Image", "Image", "~/WebPages/ImageWebForm.aspx");
             routes.MapPageRoute("Monopoly2", "WebPages/Monopoly", "~/WebPages/Monopoly.aspx");
             routes.MapPageRoute("Gizmoball", "Gizmoball", "~/WebPages/Gizmoball.aspx");
+            routes.MapPageRoute("FootballTable", "FootballTable", "~/WebPages/FootballTable.aspx");
+            routes.MapPageRoute("FootballTableProject", "FootballTableProject", "~/ASPDOTNET/FootballTable/FootballTableProject.aspx");
         }
     }
 }

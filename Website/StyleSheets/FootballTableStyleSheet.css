@@ -1,43 +1,42 @@
 ﻿body {
+    font-size:22px;
 }
 
-#center{
-    width:850px;
-    margin:auto;
+.large{
+    font-size:30px;
+    color:red;
+    text-decoration:underline;
+    
 }
 
-#main {
-    overflow: hidden;
-}
-
-#Football {
-    text-align: center;
-    border: 5px solid red;
-    padding: 10px;
-    float: left;
-    height: 100%;
-    border-radius:20px;
-        
-}
-
-#table {
-    white-space: nowrap;
-}
-
-
-#side {
-    float: left;
-    width: 30%;
-    height: 100%;
+.introduction{
+    border:solid;
+    margin-bottom:30px;
+    margin-top:2px;
     padding:10px;
 }
 
-
-#input {
-    margin-top: 10px;
-    margin-bottom: 8px;
+#panel{
+    margin-bottom:49px;
 }
 
-#addTeam, #deleteTeam, #resetButton, #box {
-    margin-top: 20px;
+#Skills{
+    margin-bottom:50px;
+}
+
+
+.mainIntroduction{
+    margin-bottom:30px;
+    margin-top:2px;
+    padding:10px;
+}
+
+#Download{
+    margin-bottom:60px;
+    color:blue;
+}
+
+a span{
+    color:blue;
+    text-decoration:underline;
 }

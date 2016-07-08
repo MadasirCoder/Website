@@ -13,11 +13,14 @@
         ga('send', 'pageview');
 
     </script>
-    <link rel="stylesheet" type="text/css" href="..\StyleSheets\SkillsStyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="..\StyleSheets\HomeStyleSheet.css" />
 </asp:Content>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder" runat="server">
 
-    <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/PeriodicTable.jpg" ImageAlign="Middle" horizontalAlign="Middle" Height="600px" Width="900px" />
-
+    <div id="middle">
+        <div id="middleImage">
+            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/PeriodicTable.jpg" horizontalAlign="Middle" Height="600px" Width="900px" />
+        </div>
+    </div>
 </asp:Content>

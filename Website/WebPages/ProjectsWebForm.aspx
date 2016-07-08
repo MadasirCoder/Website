@@ -27,6 +27,7 @@
             <p>
                 <asp:HyperLink ID="HyperLink1" runat="server" ImageUrl="~/Images/monopoly.PNG" href="Monopoly"></asp:HyperLink>
             </p>
+            <p>Homemade</p>
             <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern</p>
         </div>
 
@@ -74,6 +75,7 @@
             <p>3rd Year Group Project</p>
             <p>Technology Used: Java - Object Oriented, GUI(Swing), MVC, Oberver Pattern, JUnit, Validation Testing, Teamwork</p>
         </div>
+
 
     </div>
 </asp:Content>

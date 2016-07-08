@@ -1,7 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="WebForm12.aspx.cs" Inherits="Website.WebForm12" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FootballTableProject.aspx.cs" Inherits="Website.WebForm12" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
-    <link rel="stylesheet" type="text/css" href="..\StyleSheets\FootballTableStyleSheet.css" />
+    <link rel="stylesheet" type="text/css" href="ASPDOTNET\FootballTable\FootballTableProjStyleSheet.css" />
 
 </asp:Content>
 

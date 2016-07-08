@@ -19,7 +19,8 @@ namespace Website
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            String s = ConfigurationManager.ConnectionStrings["FootballConString"].ConnectionString;
+            // String s = ConfigurationManager.ConnectionStrings["FootballConString"].ConnectionString;
+            String s = "data source=10.169.0.102; database=MazDatabase; user id=mazdatabase; password=projectsloop0";
             SqlConnection con = new SqlConnection();
             con.ConnectionString = s;
 
@@ -37,7 +38,9 @@ namespace Website
 
                 SqlCommand cmd = new SqlCommand("SELECT TeamName,GamesPlayed,Wins,Draws,Loses,Goals,GoalAgainst,GoalDifference,Points FROM Football ORDER BY Points DESC, GoalDifference DESC, Goals DESC");
                 cmd.Connection = con;
+                Response.Write("hello");
                 con.Open();
+                Response.Write("world");
                 GridView1.DataSource = cmd.ExecuteReader();
                 GridView1.DataBind();
 
