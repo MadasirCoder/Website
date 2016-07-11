@@ -35,6 +35,7 @@
             <li>Delete teams from table.</li>
             <li>Reset table.</li>
             <li>System errors are handled using javascript.</li>
+            <li>More Features to come...</li>
         </ul>
         <br />
         <br />

@@ -15,14 +15,15 @@ namespace Website
     {
         public ArrayList teams = new ArrayList();
         private DataTable dataTable = new DataTable();
-        private int count =  0;
+        private int count = 0;
+
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // String s = ConfigurationManager.ConnectionStrings["FootballConString"].ConnectionString;
-            String s = "data source=10.169.0.102; database=MazDatabase; user id=mazdatabase; password=projectsloop0";
+            String s = ConfigurationManager.ConnectionStrings["FootballConString"].ConnectionString;
+            // String s = "data source=91.208.99.2,3353; database=mazdatabase; user id=mazdatabase; password=projectsloop0;";
             SqlConnection con = new SqlConnection();
-            con.ConnectionString = s;
+
 
 
             try
@@ -35,12 +36,10 @@ namespace Website
                 {
                     info.Text = "(Enter a match)";
                 }
-
-                SqlCommand cmd = new SqlCommand("SELECT TeamName,GamesPlayed,Wins,Draws,Loses,Goals,GoalAgainst,GoalDifference,Points FROM Football ORDER BY Points DESC, GoalDifference DESC, Goals DESC");
+                con.ConnectionString = s;
+                SqlCommand cmd = new SqlCommand("SELECT TeamName,GamesPlayed,Wins,Draws,Loses,Goals,GoalAgainst,GoalDifference,Points FROM Football ORDER BY Points DESC, GoalDifference DESC, Goals DESC, TeamName ASC");
                 cmd.Connection = con;
-                Response.Write("hello");
                 con.Open();
-                Response.Write("world");
                 GridView1.DataSource = cmd.ExecuteReader();
                 GridView1.DataBind();
 
@@ -51,7 +50,7 @@ namespace Website
                     teams.Add(name.Trim());
                     count++;
                 }
-                
+
                 if (!IsPostBack)
                 {
                     foreach (String a in teams)
@@ -79,8 +78,6 @@ namespace Website
             {
                 con.Close();
             }
-
-
         }
 
         protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
@@ -126,8 +123,6 @@ namespace Website
             {
                 ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Duplicate teams');", true);
             }
-
-
         }
 
         /*
@@ -178,7 +173,7 @@ namespace Website
                 //If teamA is the home team in the datatable else teamA is the second in table
                 if (teamA.Equals(homeTeam))
                 {
-                   // Response.Write(teamA + " equals " + homeTeam);
+                    // Response.Write(teamA + " equals " + homeTeam);
                     //home
                     a.teamName = dataTable.Rows[0][0].ToString().Trim();
                     a.wins = Int32.Parse(dataTable.Rows[0][2].ToString());
@@ -199,7 +194,7 @@ namespace Website
                 }
                 else
                 {
-                  //  Response.Write(teamA + " does not equals " + homeTeam);
+                    //  Response.Write(teamA + " does not equals " + homeTeam);
                     //home
                     a.teamName = dataTable.Rows[1][0].ToString().Trim();
                     a.wins = Int32.Parse(dataTable.Rows[1][2].ToString());
@@ -220,7 +215,7 @@ namespace Website
                 }
 
 
-                Session["d"] = a.teamName +" "+ homeScore +"-"+ awayScore +" "+ b.teamName;
+                Session["d"] = a.teamName + " " + homeScore + "-" + awayScore + " " + b.teamName;
 
                 if (homeScore > awayScore)
                 {
@@ -332,7 +327,7 @@ namespace Website
                     cmd.Parameters.Clear();
                 }
 
-                Response.Redirect(Request.RawUrl);
+                //Response.Redirect(Request.RawUrl);
             }
             catch (Exception ex)
             {
@@ -341,6 +336,7 @@ namespace Website
             finally
             {
                 con.Close();
+                Response.Redirect(Request.RawUrl);
             }
         }
 
@@ -375,33 +371,43 @@ namespace Website
                 con.Open();
 
 
-
-                if (!teams.Contains(input))
+                if (input.Length > 0)
                 {
-                    if (count < 20)
+                    if (!teams.Contains(input))
                     {
-                        cmd.CommandText = "INSERT INTO dbo.Football (TeamName,Wins,Draws,Loses,Points,GamesPlayed,Goals,GoalAgainst,GoalDifference) VALUES (@team,0,0,0,0,0,0,0,0)";
-                        cmd.Parameters.AddWithValue("@team", input);
-                        cmd.Parameters.AddWithValue("@wins", 0);
-                        cmd.Parameters.AddWithValue("@draws", 0);
-                        cmd.Parameters.AddWithValue("@loses", 0);
-                        cmd.Parameters.AddWithValue("@points", 0);
-                        cmd.Parameters.AddWithValue("@played", 0);
-                        cmd.Parameters.AddWithValue("@goals", 0);
-                        cmd.Parameters.AddWithValue("@against", 0);
-                        cmd.Parameters.AddWithValue("@diff", 0);
-                        cmd.ExecuteNonQuery();
-                        cmd.Parameters.Clear();
-                        Response.Redirect(Request.RawUrl);
+                        if (count < 18)
+                        {
+                            cmd.CommandText = "INSERT INTO dbo.Football (TeamName,Wins,Draws,Loses,Points,GamesPlayed,Goals,GoalAgainst,GoalDifference) VALUES (@team,0,0,0,0,0,0,0,0)";
+                            cmd.Parameters.AddWithValue("@team", input);
+                            cmd.Parameters.AddWithValue("@wins", 0);
+                            cmd.Parameters.AddWithValue("@draws", 0);
+                            cmd.Parameters.AddWithValue("@loses", 0);
+                            cmd.Parameters.AddWithValue("@points", 0);
+                            cmd.Parameters.AddWithValue("@played", 0);
+                            cmd.Parameters.AddWithValue("@goals", 0);
+                            cmd.Parameters.AddWithValue("@against", 0);
+                            cmd.Parameters.AddWithValue("@diff", 0);
+                            cmd.ExecuteNonQuery();
+                            cmd.Parameters.Clear();
+
+                            con.Close();
+                            Response.Redirect(Request.RawUrl);
+
+                        }
+                        else
+                        {
+                            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Reached maximum number of team(18)');", true);
+                        }
+
                     }
                     else
                     {
-                        ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Reached maximum number of team(20)');", true);
+                        ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('The team already exist in table.');", true);
                     }
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('The team is already in the table');", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('No team name entered');", true);
                 }
 
 
@@ -409,10 +415,6 @@ namespace Website
             catch (Exception ex)
             {
                 Response.Write(ex.Message);
-            }
-            finally
-            {
-                con.Close();
             }
         }
 
@@ -441,36 +443,42 @@ namespace Website
                 cmd.Connection = con;
                 con.Open();
 
-
-                if (teams.Contains(input))
+                if (input.Length > 0)
                 {
-                    if (count > 2)
+                    if (teams.Contains(input))
                     {
-                        Response.Write(teams.Capacity);
-                        cmd.CommandText = "DELETE FROM  dbo.Football WHERE TeamName = @team";
-                        cmd.Parameters.AddWithValue("@team", input);
-                        cmd.ExecuteNonQuery();
-                        cmd.Parameters.Clear();
-                        Response.Redirect(Request.RawUrl);
+
+                        if (count > 2)
+                        {
+                            Response.Write(teams.Capacity);
+                            cmd.CommandText = "DELETE FROM  dbo.Football WHERE TeamName = @team";
+                            cmd.Parameters.AddWithValue("@team", input);
+                            cmd.ExecuteNonQuery();
+                            cmd.Parameters.Clear();
+
+                            con.Close();
+                            Response.Redirect(Request.RawUrl);
+                        }
+                        else
+                        {
+                            ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Minimum of 2 tables have to be in table');", true);
+                        }
                     }
                     else
                     {
-                        ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('Minimum of 2 tables have to be in table');", true);
+                        ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('The team does not exist');", true);
+                        ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('No team name entered');", true);
                     }
                 }
                 else
                 {
-                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('The team does not exist');", true);
+                    ClientScript.RegisterStartupScript(this.GetType(), "myalert", "alert('No team name entered');", true);
                 }
 
             }
             catch (Exception ex)
             {
                 Response.Write(ex.Message);
-            }
-            finally
-            {
-                con.Close();
             }
         }
     }
